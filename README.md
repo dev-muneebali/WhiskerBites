@@ -19,15 +19,24 @@
 ## 📱 App Highlights & User Interface
 
 <div align="center">
-
-| Splash & Onboarding | Login & Auth | Store Catalog |
-| :---: | :---: | :---: |
-| <img src="Pictures/1.png" width="240" alt="Splash Screen"/> | <img src="Pictures/2.png" width="240" alt="Login Screen"/> | <img src="Pictures/3.png" width="240" alt="Store Catalog"/> |
-
-| Menu & Food Selection | Cart & Order Review | Order Confirmation |
-| :---: | :---: | :---: |
-| <img src="Pictures/4.png" width="240" alt="Menu View"/> | <img src="Pictures/7.png" width="240" alt="Cart Checkout"/> | <img src="Pictures/8.png" width="240" alt="Order Success"/> |
-
+  <table>
+    <tr>
+      <th width="50%" align="center">🔐 User Authentication & Profile</th>
+      <th width="50%" align="center">🛍️ Store Catalog & Menu Selection</th>
+    </tr>
+    <tr>
+      <td align="center"><img src="Pictures/3.png" alt="User Authentication" width="100%"/></td>
+      <td align="center"><img src="Pictures/4.png" alt="Store Catalog & Menu" width="100%"/></td>
+    </tr>
+    <tr>
+      <th width="50%" align="center">🛒 Interactive Cart & Item Management</th>
+      <th width="50%" align="center">🎉 Order Placement & Success</th>
+    </tr>
+    <tr>
+      <td align="center"><img src="Pictures/5.png" alt="Interactive Cart" width="100%"/></td>
+      <td align="center"><img src="Pictures/6.png" alt="Order Placement Success" width="100%"/></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -60,12 +69,12 @@
 
 ```mermaid
 flowchart TD
-    UI[Activities & UI Layer] --> Adapters[RecyclerView Adapters]
-    Adapters --> Models[Data Models (Menu, Restaurant, User)]
-    UI --> Storage[Data & Persistence Layer]
-    Storage --> SQLite[(SQLite DBHelper)]
-    Storage --> Prefs[SharedPreferences]
-    UI --> ImageLoader[Glide Image Cache]
+    UI["Activities & UI Layer"] --> Adapters["RecyclerView Adapters"]
+    Adapters --> Models["Data Models: Menu, Restaurant, User"]
+    UI --> Storage["Data & Persistence Layer"]
+    Storage --> SQLite[("SQLite DBHelper")]
+    Storage --> Prefs["SharedPreferences"]
+    UI --> ImageLoader["Glide Image Cache"]
 ```
 
 * **Language**: Java 8+
